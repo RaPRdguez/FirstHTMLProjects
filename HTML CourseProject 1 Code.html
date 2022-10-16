@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">My Website Survey</h1>
+    <p id="description">Thanks for filling this survey!!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Full Name: <input id="name" name="full-name" type="text" required placeholder="your-name"/></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="your-email"/></label>
+        <label id="number-label" for="number">Enter your age: <input id="number" name="user-age" type="number" min="13" max="120" required placeholder="15"/></label>
+      </fieldset>
+      <fieldset>
+	<label>Please, select your class: </label>
+        <label for="front-end-dev"><input id="front-end-dev" type="radio" name="account-type" class="inline" value="rank"/> Front-end Developer</label>
+        <label for="back-end-dev"><input id="back-end-dev" type="radio" name="account-type" class="inline" value="rank"/> Back-end Developer</label>
+        <label for="other-dev"><input id="other-dev" type="radio" name="account-type" class="inline" value="rank"/> Other</label>
+        </label>
+      </fieldset>
+      <fieldset>
+	<label>Please, select the section you would like to see improved: </label>
+        <label for="improve-front"><input id="improve-front" type="checkbox" name="imp-front" class="inline" value="to improve"/> Front-end Developer Section</label>
+        <label for="improve-back"><input id="improve-back" type="checkbox" name="imp-back" class="inline" value="to improve"/> Back-end Developer Section</label>
+        <label for="improve-python"><input id="improve-python" type="checkbox" name="imp-python" class="inline" value="to improve"/> Python and Machine Learning Course</label>
+        <label for="improve-blog"><input id="improve-blog" type="checkbox" name="imp-blog" class="inline" value="to improve"/> Blog Section</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How did find us?
+          <select id="dropdown" name="dropdown-1">
+            <option value="">(select one)</option>
+            <option value="1">News</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Friends</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="suggestion">Provide a suggestion below:
+          <textarea id="suggestion" name="user-suggestion" rows="3" cols="30" placeholder="I like to see improved..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
